@@ -1,0 +1,205 @@
+*,  html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff;
+}
+
+nav {
+    background-color:#F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    align-items: center;
+}
+
+nav .icons  {
+   display: flex;
+   align-items: center;
+}
+
+nav .icons i{
+    width: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+nav div img{
+    width: 80px;
+}
+
+.imge {
+    position: absolute;
+    left: 7%;
+}
+
+.text{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-align: left;
+}
+
+.page {
+    background-color: #B0B0B0;
+    padding-bottom: 40%;
+    display: flex;
+}
+
+.text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 20px;
+    gap: 0rem 20rem;
+    font-family: 'poppins';
+    margin-bottom: 20px;
+}
+
+.text button{
+    background-color: #3D3D3D;
+    color: #F1F1F1;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.image2 img{
+    position: absolute;
+    right: 1%;
+    width: 27%;
+}
+
+.hero{
+    background-color: #c8c8c8;
+    padding-bottom: 70%;
+    display: flex;
+    justify-content: center;
+}
+.hero .row{
+   margin-top: 35px;
+   position: absolute;
+   left: 4%;
+}
+
+.hero .row img{
+    width: 30%;
+    margin: 17px ;
+    border-radius: 20px;
+}
+
+ .row .text1{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.slider{
+    width: 950px;
+    overflow: hidden;
+    display: flex;
+    gap: 3rem;
+    padding: 30px 10px;
+    margin-left: 250px;
+    position: relative;
+}
+
+.slider .product{
+    width: 200px;
+    background-color: #3D3D3D;
+    margin-top: 20px;
+}
+
+
+.slider .product img{
+    width: 200px;
+}
+
+.slider .product .information{
+    background-color: #f6f5f5;
+    padding: 0px 30px;
+    font-family: "sans-serif";
+    flex-wrap: wrap;
+  
+}
+
+.slider .product .information button{
+    width: 30%;
+    background-color: #B0B0B0;
+    border: none;
+    border-radius: 5px;
+}
+
+.slider .arrow{
+    width: 950px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 40%;
+}
+
+.slider .arrow button{
+    font-size: 20px;
+    width: 25px;
+    height: 30px;
+    background-color: #E9E9E9;
+    border: #3D3D3D;
+    margin: px 10px;
+}
+
+.oke{
+    background-color: #efeeee;
+    padding: 50px;
+}
+
+.informasi{
+   margin-left: 12%;
+   display: flex;
+   gap: 5rem;
+}
+
+ .informasi .text2 h1{
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'poppins';
+ }
+
+ .informasi .text2 p{
+    font-size: 13px;
+    margin-top: 20px;
+    font-family: 'poppins';
+ }
+
+ .informasi .text3 h1{
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'poppins';
+ }
+
+ .informasi .text3 p{
+    font-size: 13px;
+    margin-top: 20px;
+    font-family: 'poppins';
+ }
