@@ -1,0 +1,93 @@
+*,  html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff;
+}
+
+nav {
+    background-color:#F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    align-items: center;
+}
+
+nav .icons  {
+   display: flex;
+   align-items: center;
+}
+
+nav .icons i{
+    width: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+nav div img{
+    width: 80px;
+}
+
+.conten{
+    background-color: #554E4E;
+    padding-bottom: 110px;
+}
+
+.rour{
+    display: flex;
+    gap: 7px;
+}
+
+.conten .page img{
+    transform: rotate(-37deg);
+    position: relative;
+    bottom: 10px;
+    left: 500px;
+}
+
+.line{
+    width: 11px;
+    height: 350px;
+    background-color: rgb(221, 219, 219);
+    position: relative;
+    left: 49%;
+}
+ .img img{
+    width: 45px;
+ }
+
+
+.conten .rour .img{
+    position: relative;
+    top: 355px;
+    left: 384px;
+}
+
+.line1{
+    width: 11px;
+    height: 60px;
+    background-color: rgb(221, 219, 219);
+    position: relative;
+    left: 332px;
+    top: 400px;
+}
+
+
