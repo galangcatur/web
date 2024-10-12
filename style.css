@@ -93,7 +93,7 @@ nav div img{
 }
 
 .hero{
-    background-color: #c8c8c8;
+    background-color: #D1D1D1;
     padding-bottom: 70%;
     display: flex;
     justify-content: center;
@@ -121,7 +121,7 @@ nav div img{
     display: flex;
     gap: 3rem;
     padding: 30px 10px;
-    margin-left: 250px;
+    margin-left: 238px;
     position: relative;
 }
 
@@ -204,16 +204,39 @@ nav div img{
     font-family: 'poppins';
  }
 
-.footer{
+.container{
     min-width: 100%;
     margin: auto;
     position: relative;
-    background-color: #e90e0e;
 }
 
-.footer-logo img{
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 20%;
+.rour{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: auto;
 }
 
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #888888;
+    padding: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-col{
+    width: 9%;
+    padding: 0, 100%;
+    margin-left: 130px;
+}
+
+.footer-col img{
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+}
