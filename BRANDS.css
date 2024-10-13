@@ -48,46 +48,155 @@ nav div img{
 
 .conten{
     background-color: #554E4E;
-    padding-bottom: 110px;
+    padding-bottom: 115px;
 }
 
-.rour{
+.rour1{
     display: flex;
-    gap: 7px;
+    gap: 9px;
 }
 
 .conten .page img{
     transform: rotate(-37deg);
     position: relative;
-    bottom: 10px;
-    left: 500px;
+    top: 30px;
+    left: 460px;
 }
 
 .line{
-    width: 11px;
-    height: 350px;
+    width: 13px;
+    height: 450px;
     background-color: rgb(221, 219, 219);
     position: relative;
     left: 49%;
 }
+
+.page img{
+   width: 100%;
+}
+
  .img img{
-    width: 45px;
+    width: 55px;
  }
 
 
-.conten .rour .img{
+.conten .rour1 .img{
     position: relative;
-    top: 355px;
-    left: 384px;
+    top: 455px;
+    left: 320px;
 }
 
 .line1{
-    width: 11px;
+    width: 13px;
     height: 60px;
     background-color: rgb(221, 219, 219);
     position: relative;
-    left: 332px;
-    top: 400px;
+    left: 256px;
+    top: 505px;
 }
+
+.second{
+    background-color: #DEDEDE;
+}
+
+.sec {
+    gap: 1rem;
+    padding: 30px;
+    position: relative;
+}
+
+.raul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1rem;
+    margin-left: 70px;
+}
+
+
+.sec .product{
+    width: 280px;
+    background-color: #B0B0B0;
+    margin-top: 20px;
+}
+
+
+.sec .product img{
+    width: 200px;
+    position: relative;
+    left: 35px;
+    top: 30px;
+}
+
+.sec .product .information{
+    background-color: #f6f5f5;
+    padding: 0px 30px;
+    font-family: "sans-serif";
+    flex-wrap: wrap;
+}
+
+.sec .product .information button{
+    width: 30%;
+    background-color: #B0B0B0;
+    border: none;
+    border-radius: 5px;
+}
+
+.sec .arrow{
+    width: 950px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 40%;
+}
+
+.sec  .arrow button{
+    font-size: 20px;
+    width: 25px;
+    height: 30px;
+    background-color: #E9E9E9;
+    border: #3D3D3D;
+    margin: px 10px;
+}
+
+.container{
+    min-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.rour{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #888888;
+    padding: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-col{
+    width: 9%;
+    padding: 0, 100%;
+    margin-left: 130px;
+}
+
+.footer-col img{
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+}
+
+
+
+
 
 

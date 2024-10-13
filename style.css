@@ -135,6 +135,7 @@ nav div img{
 
 .slider .product img{
     width: 200px;
+    position: relative;
 }
 
 .slider .product .information{
