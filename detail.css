@@ -1,0 +1,151 @@
+*,  html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff;
+    font-family: 'open sans';
+    overflow-x: hidden; 
+      
+}
+
+nav {
+    background-color:#F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    align-items: center;
+}
+
+nav .icons  {
+   display: flex;
+   align-items: center;
+}
+
+nav .icons i{
+    width: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+nav div img{
+    width: 80px;
+}
+
+.imge {
+    position: absolute;
+    left: 7%;
+}
+
+img {
+    max-width: 100%; }
+  
+.product-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.product-image img {
+      width: 300px;
+      border-radius: 10px;
+      position: relative;
+      left: 150px;
+      bottom: 50px;
+}
+  
+.back-link {
+      display: block;
+      margin-top: 20px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+}
+  
+.product-info {
+      padding: 20px;
+      position: relative;
+      left: 300px;
+}
+  
+.product-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+}
+
+.product-oke{
+      position: relative;
+      margin-bottom: 70px;
+      color: #e74c3c;
+      font-size: 12px;
+}
+  
+.product-price {
+      font-size: 1.5rem;
+      color: #e74c3c;
+      margin-top: 50px;
+  
+}
+  
+.product-code {
+      font-size: 16px;
+      margin-bottom: 20px;
+}
+  
+.product-options {
+      margin-top: 20px;
+}
+  
+.product-options label {
+      font-weight: bold;
+      margin-right: 10px;
+}
+  
+.product-options select {
+      padding: 5px;
+      font-size: 1rem;
+}
+  
+.add-to-cart {
+      padding: 10px 10px;
+      background-color: #707171;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+      margin-top: 30px;
+  }
+  
+.add-to-cart:hover {
+      background-color: #2980b9;
+  }
+  
+.wishlist-link {
+      display: block;
+      margin-top: 50px;
+      color: #e74c3c;
+      text-decoration: none;
+      font-weight: bold;
+}
+  
