@@ -53,25 +53,27 @@ nav div img{
     position: absolute;
     left: 7%;
 }
-
-img {
-    max-width: 100%; }
   
 .product-container {
-      display: grid;
+      display: flex;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      padding: 30px;
-      background-color: #fff;
+      background-color: #f5f2f2;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
+
+.product-image {
+     background-color: #D9D9D9;
+     width: 70%;
+     height: 580px;
+}
+
 .product-image img {
-      width: 300px;
+      width: 400px;
       border-radius: 10px;
       position: relative;
-      left: 150px;
-      bottom: 50px;
+      left: 30%;
+      bottom: 100px;    
 }
   
 .back-link {
@@ -80,12 +82,19 @@ img {
       color: #333;
       text-decoration: none;
       font-weight: bold;
+      padding: 20px;
 }
   
 .product-info {
-      padding: 20px;
-      position: relative;
-      left: 300px;
+      background-color: #f5f2f2;
+      padding: 50px ;
+      position: fixed;
+      left: 70%;
+      width: 200%;
+      height: 100vh;
+      top: 20px;
+      border: 1px solid #000000;
+      
 }
   
 .product-title {
@@ -119,6 +128,7 @@ img {
 .product-options label {
       font-weight: bold;
       margin-right: 10px;
+      position: relative;
 }
   
 .product-options select {
@@ -148,4 +158,78 @@ img {
       text-decoration: none;
       font-weight: bold;
 }
+
+.information{
+      background-color: #f5f2f2;
+      padding: 70px;
+  }
+  
+.information .text {
+      position: relative;
+      left: 20px;
+}
+
+.information .text p{
+      margin-bottom: 15px;
+}
+
+.information .text h5{
+      margin-bottom: 40px;
+}
+
+.information .text h1{
+     margin-bottom: 5px;
+     font-size: 50px;
+}
+
+
+.information .text ul{
+      list-style-type: none;
+}
+
+.information .text h2{
+      margin-bottom: 20px;
+}
+
+.container{
+      min-width: 100%;
+      margin: auto;
+      position: relative;
+  }
+  
+  .rour{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 950px;
+      margin: auto;
+  }
+  
+  ul{
+      list-style: none;
+  }
+  
+  .footer{
+      background-color: #888888;
+      padding: 50px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  
+  .footer-col{
+      width: 9%;
+      padding: 0, 100%;
+      margin-left: 130px;
+  }
+  
+  .footer-col img{
+      margin-bottom: 50px;
+      position: relative;
+      width: 100%;
+  }
+  
+  
+  
+  
+  
   
