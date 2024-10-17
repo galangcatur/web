@@ -6,6 +6,7 @@
 
 body {
     background-color: #ffff;
+    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -142,6 +143,7 @@ nav div img{
     position: relative;
     width: 200px;
     top: 10px;
+    left: 15px;
 }
 
 .slide{
@@ -192,13 +194,15 @@ nav div img{
 }
 
 .product-info p{
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .product-info button{
     position: relative;
     bottom: 40px;
-    font-size: 12px
+    font-size: 12px;
+    background-color: #6e6e6e;
+    color: #121212;
 }
 
  .btn{
@@ -228,7 +232,7 @@ nav div img{
 }
 
 .informasi{
-   margin-left: 12%;
+   margin-left: 8%;
    display: flex;
    gap: 5rem;
 }
@@ -236,25 +240,24 @@ nav div img{
  .informasi .text2 h1{
     font-size: 16px;
     margin-top: 20px;
-    font-family: 'poppins';
+   
  }
 
  .informasi .text2 p{
     font-size: 13px;
     margin-top: 20px;
-    font-family: 'poppins';
  }
 
  .informasi .text3 h1{
     font-size: 16px;
     margin-top: 20px;
-    font-family: 'poppins';
+   
  }
 
  .informasi .text3 p{
     font-size: 13px;
     margin-top: 20px;
-    font-family: 'poppins';
+   
  }
 
 .container{
@@ -294,3 +297,23 @@ ul{
     width: 100%;
 }
 
+.footer-col ul li a{
+    position: relative;
+    top: 15px;
+    line-height: 25px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.sosial-link a{
+    color: #121212;
+}
+
+.footer-col a h4{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #101010;
+}

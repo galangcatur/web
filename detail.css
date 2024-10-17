@@ -228,6 +228,26 @@ nav div img{
       width: 100%;
   }
   
+  .footer-col ul li a{
+      position: relative;
+      top: 15px;
+      line-height: 25px;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #eaeaea;
+      text-decoration: none;
+      font-weight: 300;
+  }
+  
+  .sosial-link a{
+      color: #121212;
+  }
+  
+  .footer-col a h4{
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #101010;
+  }  
   
   
   
