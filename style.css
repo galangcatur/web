@@ -14,6 +14,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    
 }
 
 nav ul {
@@ -100,30 +101,43 @@ nav div img{
     display: flex;
     margin: 0;
 }
-.hero .row{
+
+.hero .row {
    margin-top: 35px;
    position: absolute;
-   left: 4%;
+   left: 125px;
+   display: flex;
+   margin: 30px 40px;
+   gap: 12px;
 }
 
-.hero .row img{
-    width: 30%;
-    margin: 17px ;
+.hero .row .img1 img{
+    width: 400px;
 }
 
- .row .text1{
+.hero .row .img2 img{
+    width: 400px;
+}
+
+.hero .row .img3 img{
+    width: 400px;
+    height: 504px;
+}
+
+.text1{
     text-align: center;
     font-size: 15px;
     margin-top: 10px;
     position: relative;
-    right: 17px;
+    left: 680px;
+    top: 620px;
 }
 
 .slider-container {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    left: 266px;
+    left: 120px;
     overflow: hidden;
     top: 700px;
     
@@ -172,7 +186,6 @@ nav div img{
     left: 20px;
     bottom: 40px;
     margin: 0;
-    
 }
 
 .product-info p{
@@ -201,15 +214,15 @@ nav div img{
     position: relative;
     bottom: 40px;
     font-size: 12px;
-    background-color: #6e6e6e;
+    background-color: #979797;
     color: #121212;
 }
 
  .btn{
-   align-items: center;
-   width: 800px;
+   right: 205px;
+   width: 700px;
    position: relative;
-   top: 880px;
+   top: 850px;
 }
 
 .btn .nav-button {
@@ -222,8 +235,8 @@ nav div img{
     cursor: pointer;
 }
 
-.prev { right:238%; }
-.next { right: 230px; }
+.prev { right:239%; }
+.next { right: 64px; }
 
 
 .oke{
@@ -269,7 +282,7 @@ nav div img{
 .rour{
     display: flex;
     flex-wrap: wrap;
-    max-width: 950px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -287,7 +300,6 @@ ul{
 
 .footer-col{
     width: 9%;
-    padding: 0, 100%;
     margin-left: 130px;
 }
 
@@ -299,13 +311,13 @@ ul{
 
 .footer-col ul li a{
     position: relative;
-    top: 15px;
-    line-height: 25px;
-    font-size: 16px;
+    top: 10px;
+    line-height: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     color: #eaeaea;
     text-decoration: none;
-    font-weight: 300;
+    font-family: 'inter';
 }
 
 .sosial-link a{
@@ -316,4 +328,8 @@ ul{
     text-transform: capitalize;
     text-decoration: none;
     color: #101010;
+}
+.col{
+    position: relative;
+    right: 30px;
 }
