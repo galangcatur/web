@@ -148,16 +148,8 @@ nav div img{
   }
   
 .add-to-cart:hover {
-      background-color: #2980b9;
+      background-color: #e20505
   }
-  
-.wishlist-link {
-      display: block;
-      margin-top: 50px;
-      color: #e74c3c;
-      text-decoration: none;
-      font-weight: bold;
-}
 
 .information{
       background-color: #f5f2f2;
@@ -291,11 +283,14 @@ nav div img{
     font-size: 15px;
 }
 
- .button{
+ .product-info button{
     position: relative;
     font-size: 12px;
     background-color: #979797;
     color: #121212;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 4px;
 }
 
  .btn2{

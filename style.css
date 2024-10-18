@@ -89,6 +89,10 @@ nav div img{
     font-size: 20px;
 }
 
+.text button:hover{
+    background-color: #e20505;
+}
+
 .image2 img{
     position: absolute;
     right: 1%;
