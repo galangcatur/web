@@ -213,9 +213,14 @@ nav div img{
     margin: 0 auto;
     position: relative;
     left: 252px;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
+
+ .text2 h2{
+    position: relative;
+    left: 366px;
+}
+
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -240,6 +245,7 @@ nav div img{
     padding: 2px;
     height: 20%;
     width: 20px;
+    margin-top: 40px;
 }
 
 
