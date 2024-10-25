@@ -7,10 +7,12 @@
 </head>
 <body>
  
-   <form action="" enctype="multipart/form-data" method="">
-
-   </form>
-    
+    <form action="" enctype="multipart/form-data">
+        <!--inputkan nama -->
+        <input type="text" nama="">
+        <!--inputkan NISN -->
+        <!--inputkan NIS -->
+    </form>
 
 
 </body>
