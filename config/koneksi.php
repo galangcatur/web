@@ -1,4 +1,5 @@
 <?php
+   $rootDir = $_SERVER['DOCUMENT_ROOT'].'/web/';
    $server = "localhost";
    $user = "root";
    $pass='';

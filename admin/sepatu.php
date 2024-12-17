@@ -9,7 +9,7 @@
         $harga = $_POST['harga'];
         $stok = $_POST['stok'];
         $deskripsi = $_POST['deskripsi'];
-        $kategori = $_POST['kategori'];
+        $kategori = $_POST['kategori_id'];
         
         
        
@@ -43,7 +43,7 @@
             echo "Harga: Rp " . number_format($harga, 0, ',', '.') . "<br>";
             echo "Stok: " . htmlspecialchars($stok) . "<br>";
             echo "Deskripsi: " . htmlspecialchars($deskripsi) . "<br>";
-            echo "kategori: " . htmlspecialchars($kategori) . "<br>";
+            
             echo "</div>";
         }
 
@@ -63,21 +63,37 @@
         if($validasi == 0 ){
             // echo "data sudah lengkap siap di inputkan";
             $result = inputSepatu ($data, $koneksi);
-            $folderTujuan = $rootDir."upload";
+            $folderTujuan = $rootDir."/uploads";
             if($result) 
             { 
                 $upload = tambahGambar($folderTujuan, $_FILES['gambar']);
                 if($upload) 
-                    header("location:input_buku_gambar.php?status=1");
+                    header("location:datasepatu.php?status=1");
                 else 
-                header("location:input_buku_gambar.php?status=1&errno=2");
+                header("location:datasepatu.php?status=1&errno=2");
             }
-            else header("location:input_buku_gambar.php?errno=1");
+            else header("location:datasepatu.php?errno=1");
         }
         else {
             echo "data $validasi kurang";
         }
 
+        }
+
+        else if(isset($_GET['del'])){
+            $id = $_GET['del'] ?? null;
+        
+            if($id === null || !ctype_digit($id)){
+                header("location:view_sepatu.php?errno=3");
+            }
+            else {
+                // function delete
+                $result = delProduct($koneksi, $id);
+                if($result) 
+                    header("location:view_sepatu.php?success=1");
+                else 
+                    header("location:view_sepatu.php?errno=5");
+            }
         }
 
 

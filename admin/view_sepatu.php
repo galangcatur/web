@@ -49,7 +49,9 @@ require_once "../config/config.php";
                         <td><?= $data['warna'] ?></td>
                         <td><?= $data['gambar'] ?></td>
                         <td><?= $data['deskripsi'] ?></td>
-                        <td><?= $data['kategori_id'] ?></td>
+                        <td><?= $data['name'] ?></td>
+                        <td><a href="?del=<?= $data['id'] ?>">edit</a></td>
+                        <td><a href="?del=<?= $data['id'] ?>">delete</a></td>
                     </tr>
                     <?php 
                        $no ++;

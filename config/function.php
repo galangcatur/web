@@ -22,13 +22,13 @@ function inputSepatu($data, $koneksi)
     $kategori_id = $data['kategori'];
 
 
-    $sql = "INSERT INTO product(nama,deskripsi,gambar,harga,warna,stok,kategori_id,ukuran,) VALUES (?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO product (nama,deskripsi,harga,gambar,warna,stok,kategori_id,ukuran) VALUES (?,?,?,?,?,?,?,?)";
     $stmt = mysqli_prepare($koneksi, $sql);
     if ($stmt == false) {
         return "FAILED";
     }
 
-    mysqli_stmt_bind_param($stmt, "sssisiii", $nama_produk,$deskripsi, $gambar,$harga,$warna, $stok, $kategori_id, $ukuran);
+    mysqli_stmt_bind_param($stmt, "sssssiii", $nama_produk,$deskripsi, $harga,$gambar,$warna, $stok, $kategori_id, $ukuran);
     $result = mysqli_stmt_execute($stmt);
 
     if(!$result)
@@ -39,8 +39,8 @@ function inputSepatu($data, $koneksi)
 }
 
 function viewSepatu($koneksi){
-    $sql = "SELECT product.id,product.nama,product.deskripsi,product.harga,product.gambar,product.ukuran,product.warna,product.stok,product.kategori_id FROM `product`";
-
+    $sql = "SELECT product.id,product.nama,product.deskripsi,product.harga,product.gambar,product.ukuran,product.warna,product.stok,kategori.name FROM `product`
+    LEFT JOIN kategori ON product.kategori_id = kategori.id";
     $stmt = mysqli_query($koneksi, $sql);
 
     if(mysqli_num_rows($stmt) > 0) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
@@ -54,4 +54,15 @@ function viewkategori($koneksi){
    
    if(mysqli_num_rows($stmt) > 0) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
     else return false;
+}
+
+function delProduct($koneksi, $id){
+    $sql = "DELETE FROM product WHERE id = ?";
+    $stmt = mysqli_prepare($koneksi, $sql);
+
+    mysqli_stmt_bind_param($stmt, "i", $id);
+    $result = mysqli_stmt_execute($stmt);
+
+    if($result) return true;
+    else return false; 
 }

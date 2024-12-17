@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="Data.php" enctype="multipart/form-data" method="post">
+    <form action="sepatu.php" enctype="multipart/form-data" method="post">
         <!-- Inputikan Nama  -->
 
         Nama: <input type="text" name="Nama" value=""><br>
